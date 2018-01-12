@@ -32,9 +32,9 @@
 		</property>
 	</bean>
 	<bean name="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-		<property name="driverClassName" value="${hibernate.connection.driver}" />
-		<property name="url" value="${hibernate.connection.url}" />
-		<property name="username" value="${hibernate.connection.user}" />
+		<property name="driverClass" value="${hibernate.connection.driver}" />
+		<property name="jdbcUrl" value="${hibernate.connection.url}" />
+		<property name="user" value="${hibernate.connection.user}" />
 		<property name="password" value="${hibernate.connection.password}" />
 	</bean>
 </beans>
